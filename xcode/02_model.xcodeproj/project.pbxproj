@@ -1,0 +1,1250 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              2355E2548FBF49CEB75F76FE /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = D81A7B2156894FA1BDF1E31B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            C3FCBF8353E24CE6AE5A84C3 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            B0DB9D69106945ECBA3ADFE8 /* PBXTargetDependency */,
+                            B73C886A230D48B8A2FB462A /* PBXTargetDependency */,
+                            4A0E9567D2144B39B5DE85B6 /* PBXTargetDependency */,
+                            937D641931364DB6BE538DA2 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              30BCCF388085478BB2F0D5B0 /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 1505AED2ACFB4066897A9711 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            19088501C9954F28945CCEF2 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+569880E7FBB544339223E0D4 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = EADE8F2221454946864EA616 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include/GLFW/glfw3.h */; settings = { COMPILER_FLAGS = ""; }; };
+5FF859326EDC4C07A834F78B /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = D53A6F5AED3B4B26B1D098C5 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include/GLFW/glfw3native.h */; settings = { COMPILER_FLAGS = ""; }; };
+BE3573AD7E574E0AAFB8EAE5 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9DE87557302C476FB59D373D /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+4BA8FE80C161473B8204536F /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/clipboard.c */ = {isa = PBXBuildFile; fileRef = 3416A372079041D2970F6AA1 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/clipboard.c */; settings = { COMPILER_FLAGS = ""; }; };
+B0C5D30D61794B84BD92A4F7 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_clipboard.m */ = {isa = PBXBuildFile; fileRef = 29CC0F6FC6A04730BAC96CEF /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_clipboard.m */; settings = { COMPILER_FLAGS = ""; }; };
+B93D9F6B22D24FF8A79A6E71 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_gamma.c */ = {isa = PBXBuildFile; fileRef = EC4D0D08A91B40FAA871F4D8 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_gamma.c */; settings = { COMPILER_FLAGS = ""; }; };
+0F2C443193E74E829F8DA069 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = B32E07430B904E7C89CB83A4 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_init.m */; settings = { COMPILER_FLAGS = ""; }; };
+11656A064815470AA0BF08E4 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_joystick.m */ = {isa = PBXBuildFile; fileRef = FB7A4B86B24E416CA1FF9BC7 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_joystick.m */; settings = { COMPILER_FLAGS = ""; }; };
+91812F19D6AF4CF0AF9C8BE0 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = BD94DF512F81443C939F40F8 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_monitor.m */; settings = { COMPILER_FLAGS = ""; }; };
+A5E63AD83D2A4506A46F3637 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = C75A9E158DAF43D39619CEC9 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_platform.h */; settings = { COMPILER_FLAGS = ""; }; };
+7BA4E15F66374232BD50DF17 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_time.c */ = {isa = PBXBuildFile; fileRef = 9521D1C776124001A397F6B8 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_time.c */; settings = { COMPILER_FLAGS = ""; }; };
+C3BFCB4853904D83B4D28603 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = 332D0AD577BD4DC2BFEBBEF5 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_window.m */; settings = { COMPILER_FLAGS = ""; }; };
+6BB2FAC260D44073BCF29D45 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/context.c */ = {isa = PBXBuildFile; fileRef = B21F1C9C90EC48AD88EA90E2 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/context.c */; settings = { COMPILER_FLAGS = ""; }; };
+25BA8935A37F411DB521E90D /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/gamma.c */ = {isa = PBXBuildFile; fileRef = BF28D88E050246F3ABD7DA86 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/gamma.c */; settings = { COMPILER_FLAGS = ""; }; };
+C5DB565D8124431E9B60F255 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/init.c */ = {isa = PBXBuildFile; fileRef = AD2FF6EA4DD74293A9F001CA /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/init.c */; settings = { COMPILER_FLAGS = ""; }; };
+3CE0D98692FC48E6B93493F9 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/input.c */ = {isa = PBXBuildFile; fileRef = 81BAB904311F45A4A6512D80 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/input.c */; settings = { COMPILER_FLAGS = ""; }; };
+140DD22DE8794C3D998492D5 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/internal.h */ = {isa = PBXBuildFile; fileRef = BE12E8CE310846AB8B64A2CD /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/internal.h */; settings = { COMPILER_FLAGS = ""; }; };
+D42F44D7235B43158EA001A1 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/joystick.c */ = {isa = PBXBuildFile; fileRef = 7B52E9AE4F7244BE99F3A40D /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/joystick.c */; settings = { COMPILER_FLAGS = ""; }; };
+B5E7B6648E5C487D9C7580A8 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/monitor.c */ = {isa = PBXBuildFile; fileRef = E1A3E19AE2A54331B98D24A0 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/monitor.c */; settings = { COMPILER_FLAGS = ""; }; };
+852017C1661141698C1DC321 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = 372021AE821C4EEEAFCAE773 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/nsgl_context.m */; settings = { COMPILER_FLAGS = ""; }; };
+3BE6AB620FCD4BC4B1538E34 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/nsgl_platform.h */ = {isa = PBXBuildFile; fileRef = ACBA833E9BC94D2181AA15EB /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/nsgl_platform.h */; settings = { COMPILER_FLAGS = ""; }; };
+A29B8C624D2448C0B77C1C42 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/time.c */ = {isa = PBXBuildFile; fileRef = 59A3B8D78782425D9E6630E4 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/time.c */; settings = { COMPILER_FLAGS = ""; }; };
+417054FB9DBB4A259492E30F /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/window.c */ = {isa = PBXBuildFile; fileRef = 76609E449C57442E96652416 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/window.c */; settings = { COMPILER_FLAGS = ""; }; };
+BCB636A7954C408EA8543068 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/common/ext/glfw/src/config.h */ = {isa = PBXBuildFile; fileRef = 2AFF47968D75459AA8F38ABC /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/common/ext/glfw/src/config.h */; settings = { COMPILER_FLAGS = ""; }; };
+40FA705505B84CA2857400C3 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps/02_model.cpp */ = {isa = PBXBuildFile; fileRef = 9E36388BD4D54AE5A7A6C6E4 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps/02_model.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+2EDD53F54158487285077A3B /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 3EAA6203F75F43AFAB093513 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+1077D14CCEF9471A804A3DC5 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 7B9BB139F25C46F1939D3444 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+9391F49449574F22993E0465 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/common.h */ = {isa = PBXBuildFile; fileRef = 12C03F16597742ACB3906E70 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/common.h */; settings = { COMPILER_FLAGS = ""; }; };
+D0AA6B6D3F7E4888AD57FF50 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/debug.h */ = {isa = PBXBuildFile; fileRef = 2AAE2BE47A494F418D584B0C /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/debug.h */; settings = { COMPILER_FLAGS = ""; }; };
+9BB69F5C06D347FAAD1CE565 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew/glew.c */ = {isa = PBXBuildFile; fileRef = EB75EA2B395C44EFB87AAD86 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew/glew.c */; settings = { COMPILER_FLAGS = ""; }; };
+A2C8597BB52E4657BC1BFE7A /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew/glew.h */ = {isa = PBXBuildFile; fileRef = FBD8F7E24D6F4861BA2D6ECA /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew/glew.h */; settings = { COMPILER_FLAGS = ""; }; };
+F47A40EFDD84468F94F0C32B /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew/glxew.h */ = {isa = PBXBuildFile; fileRef = C7350734BA6B4315BBBC2A8F /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew/glxew.h */; settings = { COMPILER_FLAGS = ""; }; };
+D876F5849400489ABD3EE99E /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew/wglew.h */ = {isa = PBXBuildFile; fileRef = 7391A7BE182E456C9263F846 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew/wglew.h */; settings = { COMPILER_FLAGS = ""; }; };
+3ADE6BCEF4684A709DAB2E39 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng/lodepng.cpp */ = {isa = PBXBuildFile; fileRef = 2D75B51C04674455857AB7D6 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng/lodepng.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+4C55B19877F04E73AD326D79 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng/lodepng.h */ = {isa = PBXBuildFile; fileRef = E819FA407F9941DCA4FB9332 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng/lodepng.h */; settings = { COMPILER_FLAGS = ""; }; };
+DB0ECA853A694823A5A91BD8 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/gls.h */ = {isa = PBXBuildFile; fileRef = F8D826CD79AA49BA9DB7FF02 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/gls.h */; settings = { COMPILER_FLAGS = ""; }; };
+242A734DC4FB4F219C22790D /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/image.cpp */ = {isa = PBXBuildFile; fileRef = 5A28D05541024E0B97CE2EBC /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/image.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+5A4A4FD12E6E4431BA4F3C17 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/image.h */ = {isa = PBXBuildFile; fileRef = A0F7DE79245846B1B8BEE0C0 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/image.h */; settings = { COMPILER_FLAGS = ""; }; };
+E46E6801346242628CFA0D47 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/json.cpp */ = {isa = PBXBuildFile; fileRef = 0D608A15F3C14A609AADB0CB /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/json.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+A77CAC20CEBE42BC88B22CD4 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/json.h */ = {isa = PBXBuildFile; fileRef = 5EE498AB8FA5491F83B78F19 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/json.h */; settings = { COMPILER_FLAGS = ""; }; };
+E6A1969AE1014B6391BC3190 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/picojson.h */ = {isa = PBXBuildFile; fileRef = B7C4AC1D924648F4BB6AFAE0 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/picojson.h */; settings = { COMPILER_FLAGS = ""; }; };
+B9D0E307D9454CD19403B4EE /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/scene.cpp */ = {isa = PBXBuildFile; fileRef = 2AF516F57D6C4DA782DE17D6 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/scene.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+D3558BD0632A43BFB62E42BF /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/scene.h */ = {isa = PBXBuildFile; fileRef = 36AC6AF669594A8E9FB366F1 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/scene.h */; settings = { COMPILER_FLAGS = ""; }; };
+BD0351DB6D324AAAB16B1846 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/vmath.h */ = {isa = PBXBuildFile; fileRef = 444CAEF6D2BC4AFDA37BF9A4 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/vmath.h */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              8B1B40008F214FE1A1C8F34A /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              8C962CBB6ECD49E4B49388A2 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              45C0202305134AF2BD72AE24 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+              91A6DF7E060A40C284BE8CB6 /* MinSizeRel */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = MinSizeRel;
+              };
+              1900B0AA63FF4A0E81249827 /* RelWithDebInfo */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              DA8A5D6CC85A4E0884DD75D7 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 025AAE6D3FB44FAEBD34A750 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = C2CAA66586EC4D949DE4B9B1;
+                     remoteInfo = 02_model;
+              };
+              9161DF95CE954374B49223FB /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 025AAE6D3FB44FAEBD34A750 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 94FE87AA1E6D4AA39A33C066;
+                     remoteInfo = common;
+              };
+              2C97C2A95FD54C419D10CAF7 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 025AAE6D3FB44FAEBD34A750 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 59417C847CCB466EB9D0A32D;
+                     remoteInfo = glfw;
+              };
+              45B7EA63377A4F839F916EE9 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 025AAE6D3FB44FAEBD34A750 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 30BCCF388085478BB2F0D5B0;
+                     remoteInfo = ZERO_CHECK;
+              };
+              773A7106692842DFA84CCA28 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 025AAE6D3FB44FAEBD34A750 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 94FE87AA1E6D4AA39A33C066;
+                     remoteInfo = common;
+              };
+              E6D1163DE6EA4747A528493D /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 025AAE6D3FB44FAEBD34A750 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 59417C847CCB466EB9D0A32D;
+                     remoteInfo = glfw;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+8AC48B2F4BD54676A6FD6FD9 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+558AE9820DA4433AAFFFBF20 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+EADE8F2221454946864EA616 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "glfw3.h"; path = "src/common/ext/glfw/include/GLFW/glfw3.h"; sourceTree = SOURCE_ROOT; };
+D53A6F5AED3B4B26B1D098C5 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "glfw3native.h"; path = "src/common/ext/glfw/include/GLFW/glfw3native.h"; sourceTree = SOURCE_ROOT; };
+9DE87557302C476FB59D373D /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "src/common/ext/glfw/src/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+3416A372079041D2970F6AA1 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/clipboard.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "clipboard.c"; path = "src/common/ext/glfw/src/clipboard.c"; sourceTree = SOURCE_ROOT; };
+29CC0F6FC6A04730BAC96CEF /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_clipboard.m */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.objc"; fileEncoding = 4; name = "cocoa_clipboard.m"; path = "src/common/ext/glfw/src/cocoa_clipboard.m"; sourceTree = SOURCE_ROOT; };
+EC4D0D08A91B40FAA871F4D8 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_gamma.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "cocoa_gamma.c"; path = "src/common/ext/glfw/src/cocoa_gamma.c"; sourceTree = SOURCE_ROOT; };
+B32E07430B904E7C89CB83A4 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.objc"; fileEncoding = 4; name = "cocoa_init.m"; path = "src/common/ext/glfw/src/cocoa_init.m"; sourceTree = SOURCE_ROOT; };
+FB7A4B86B24E416CA1FF9BC7 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.objc"; fileEncoding = 4; name = "cocoa_joystick.m"; path = "src/common/ext/glfw/src/cocoa_joystick.m"; sourceTree = SOURCE_ROOT; };
+BD94DF512F81443C939F40F8 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.objc"; fileEncoding = 4; name = "cocoa_monitor.m"; path = "src/common/ext/glfw/src/cocoa_monitor.m"; sourceTree = SOURCE_ROOT; };
+C75A9E158DAF43D39619CEC9 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "cocoa_platform.h"; path = "src/common/ext/glfw/src/cocoa_platform.h"; sourceTree = SOURCE_ROOT; };
+9521D1C776124001A397F6B8 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "cocoa_time.c"; path = "src/common/ext/glfw/src/cocoa_time.c"; sourceTree = SOURCE_ROOT; };
+332D0AD577BD4DC2BFEBBEF5 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.objc"; fileEncoding = 4; name = "cocoa_window.m"; path = "src/common/ext/glfw/src/cocoa_window.m"; sourceTree = SOURCE_ROOT; };
+B21F1C9C90EC48AD88EA90E2 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/context.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "context.c"; path = "src/common/ext/glfw/src/context.c"; sourceTree = SOURCE_ROOT; };
+BF28D88E050246F3ABD7DA86 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/gamma.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "gamma.c"; path = "src/common/ext/glfw/src/gamma.c"; sourceTree = SOURCE_ROOT; };
+AD2FF6EA4DD74293A9F001CA /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/init.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "init.c"; path = "src/common/ext/glfw/src/init.c"; sourceTree = SOURCE_ROOT; };
+81BAB904311F45A4A6512D80 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/input.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "input.c"; path = "src/common/ext/glfw/src/input.c"; sourceTree = SOURCE_ROOT; };
+BE12E8CE310846AB8B64A2CD /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/internal.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "internal.h"; path = "src/common/ext/glfw/src/internal.h"; sourceTree = SOURCE_ROOT; };
+7B52E9AE4F7244BE99F3A40D /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/joystick.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "joystick.c"; path = "src/common/ext/glfw/src/joystick.c"; sourceTree = SOURCE_ROOT; };
+E1A3E19AE2A54331B98D24A0 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "monitor.c"; path = "src/common/ext/glfw/src/monitor.c"; sourceTree = SOURCE_ROOT; };
+372021AE821C4EEEAFCAE773 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.objc"; fileEncoding = 4; name = "nsgl_context.m"; path = "src/common/ext/glfw/src/nsgl_context.m"; sourceTree = SOURCE_ROOT; };
+ACBA833E9BC94D2181AA15EB /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/nsgl_platform.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "nsgl_platform.h"; path = "src/common/ext/glfw/src/nsgl_platform.h"; sourceTree = SOURCE_ROOT; };
+59A3B8D78782425D9E6630E4 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/time.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "time.c"; path = "src/common/ext/glfw/src/time.c"; sourceTree = SOURCE_ROOT; };
+76609E449C57442E96652416 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/window.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "window.c"; path = "src/common/ext/glfw/src/window.c"; sourceTree = SOURCE_ROOT; };
+2AFF47968D75459AA8F38ABC /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/common/ext/glfw/src/config.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "config.h"; path = "xcode/src/common/ext/glfw/src/config.h"; sourceTree = SOURCE_ROOT; };
+D42DF6ECD3D248AAAED0FFE5 /* glfw */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libglfw3.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+9E36388BD4D54AE5A7A6C6E4 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps/02_model.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "02_model.cpp"; path = "src/apps/02_model.cpp"; sourceTree = SOURCE_ROOT; };
+3EAA6203F75F43AFAB093513 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "src/apps/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+BA376B437CC6482E9AC82EE2 /* 02_model */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = 02_model; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+7B9BB139F25C46F1939D3444 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "src/common/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+12C03F16597742ACB3906E70 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/common.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "common.h"; path = "src/common/common.h"; sourceTree = SOURCE_ROOT; };
+2AAE2BE47A494F418D584B0C /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/debug.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "debug.h"; path = "src/common/debug.h"; sourceTree = SOURCE_ROOT; };
+EB75EA2B395C44EFB87AAD86 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew/glew.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "glew.c"; path = "src/common/ext/glew/glew.c"; sourceTree = SOURCE_ROOT; };
+FBD8F7E24D6F4861BA2D6ECA /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew/glew.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "glew.h"; path = "src/common/ext/glew/glew.h"; sourceTree = SOURCE_ROOT; };
+C7350734BA6B4315BBBC2A8F /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew/glxew.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "glxew.h"; path = "src/common/ext/glew/glxew.h"; sourceTree = SOURCE_ROOT; };
+7391A7BE182E456C9263F846 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew/wglew.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "wglew.h"; path = "src/common/ext/glew/wglew.h"; sourceTree = SOURCE_ROOT; };
+2D75B51C04674455857AB7D6 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng/lodepng.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "lodepng.cpp"; path = "src/common/ext/lodepng/lodepng.cpp"; sourceTree = SOURCE_ROOT; };
+E819FA407F9941DCA4FB9332 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng/lodepng.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "lodepng.h"; path = "src/common/ext/lodepng/lodepng.h"; sourceTree = SOURCE_ROOT; };
+F8D826CD79AA49BA9DB7FF02 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/gls.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "gls.h"; path = "src/common/gls.h"; sourceTree = SOURCE_ROOT; };
+5A28D05541024E0B97CE2EBC /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/image.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "image.cpp"; path = "src/common/image.cpp"; sourceTree = SOURCE_ROOT; };
+A0F7DE79245846B1B8BEE0C0 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/image.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "image.h"; path = "src/common/image.h"; sourceTree = SOURCE_ROOT; };
+0D608A15F3C14A609AADB0CB /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/json.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "json.cpp"; path = "src/common/json.cpp"; sourceTree = SOURCE_ROOT; };
+5EE498AB8FA5491F83B78F19 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/json.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "json.h"; path = "src/common/json.h"; sourceTree = SOURCE_ROOT; };
+B7C4AC1D924648F4BB6AFAE0 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/picojson.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "picojson.h"; path = "src/common/picojson.h"; sourceTree = SOURCE_ROOT; };
+2AF516F57D6C4DA782DE17D6 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/scene.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "scene.cpp"; path = "src/common/scene.cpp"; sourceTree = SOURCE_ROOT; };
+36AC6AF669594A8E9FB366F1 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/scene.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "scene.h"; path = "src/common/scene.h"; sourceTree = SOURCE_ROOT; };
+444CAEF6D2BC4AFDA37BF9A4 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/vmath.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "vmath.h"; path = "src/common/vmath.h"; sourceTree = SOURCE_ROOT; };
+0F87063C21FB4790A88C3A64 /* common */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libcommon.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              4319E6B2917046A8A320E9E1  = {
+                     isa = PBXGroup;
+                     children = (
+                            71E5738CF429449496222ED1 /* Sources */,
+                            4A18E5B5E3CF45D7B8076AE5 /* Resources */,
+                            7EB71B87D9C240B28258DECD /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              71E5738CF429449496222ED1 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            F02A1E59E9944BB0A2DF1122 /* ALL_BUILD */,
+                            1E237BB454C04C21B6F78F15 /* ZERO_CHECK */,
+                            2541195FDEF548C6A1CBCB66 /* glfw */,
+                            A3404CA8DC6C4E06938A8DD5 /* 02_model */,
+                            31644A21AB1644F4AB653E85 /* common */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              4A18E5B5E3CF45D7B8076AE5 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              F02A1E59E9944BB0A2DF1122 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            B372332A07FD45D48A587E97 /* CMake Rules */,
+                            8AC48B2F4BD54676A6FD6FD9 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              B372332A07FD45D48A587E97 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              1E237BB454C04C21B6F78F15 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            8A29C02E57FF42288DBF2EB0 /* CMake Rules */,
+                            558AE9820DA4433AAFFFBF20 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              8A29C02E57FF42288DBF2EB0 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              2541195FDEF548C6A1CBCB66 /* glfw */ = {
+                     isa = PBXGroup;
+                     children = (
+                            720A0A0E0FCB4F06BE3E6C5B /* Source Files */,
+                            E405E8DB1C7843349EF6C7EF /* Header Files */,
+                            9DE87557302C476FB59D373D /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/CMakeLists.txt */,
+                     );
+                     name = glfw;
+                     sourceTree = "<group>";
+              };
+              720A0A0E0FCB4F06BE3E6C5B /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            3416A372079041D2970F6AA1 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/clipboard.c */,
+                            29CC0F6FC6A04730BAC96CEF /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_clipboard.m */,
+                            EC4D0D08A91B40FAA871F4D8 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_gamma.c */,
+                            B32E07430B904E7C89CB83A4 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_init.m */,
+                            FB7A4B86B24E416CA1FF9BC7 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_joystick.m */,
+                            BD94DF512F81443C939F40F8 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_monitor.m */,
+                            9521D1C776124001A397F6B8 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_time.c */,
+                            332D0AD577BD4DC2BFEBBEF5 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_window.m */,
+                            B21F1C9C90EC48AD88EA90E2 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/context.c */,
+                            BF28D88E050246F3ABD7DA86 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/gamma.c */,
+                            AD2FF6EA4DD74293A9F001CA /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/init.c */,
+                            81BAB904311F45A4A6512D80 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/input.c */,
+                            7B52E9AE4F7244BE99F3A40D /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/joystick.c */,
+                            E1A3E19AE2A54331B98D24A0 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/monitor.c */,
+                            372021AE821C4EEEAFCAE773 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/nsgl_context.m */,
+                            59A3B8D78782425D9E6630E4 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/time.c */,
+                            76609E449C57442E96652416 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/window.c */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              E405E8DB1C7843349EF6C7EF /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            EADE8F2221454946864EA616 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include/GLFW/glfw3.h */,
+                            D53A6F5AED3B4B26B1D098C5 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include/GLFW/glfw3native.h */,
+                            C75A9E158DAF43D39619CEC9 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_platform.h */,
+                            BE12E8CE310846AB8B64A2CD /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/internal.h */,
+                            ACBA833E9BC94D2181AA15EB /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/nsgl_platform.h */,
+                            2AFF47968D75459AA8F38ABC /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/common/ext/glfw/src/config.h */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              A3404CA8DC6C4E06938A8DD5 /* 02_model */ = {
+                     isa = PBXGroup;
+                     children = (
+                            9E36388BD4D54AE5A7A6C6E4 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps/02_model.cpp */,
+                            3EAA6203F75F43AFAB093513 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps/CMakeLists.txt */,
+                     );
+                     name = 02_model;
+                     sourceTree = "<group>";
+              };
+              31644A21AB1644F4AB653E85 /* common */ = {
+                     isa = PBXGroup;
+                     children = (
+                            B49647A06BDA4308A3C2A024 /* common */,
+                            57D424128A6A45CCA052A291 /* ext */,
+                            C7897682A2D14499AF3DA288 /* Source Files */,
+                            5199B0FE156E4709941D96F5 /* Header Files */,
+                            7B9BB139F25C46F1939D3444 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/CMakeLists.txt */,
+                     );
+                     name = common;
+                     sourceTree = "<group>";
+              };
+              B49647A06BDA4308A3C2A024 /* common */ = {
+                     isa = PBXGroup;
+                     children = (
+                            12C03F16597742ACB3906E70 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/common.h */,
+                            2AAE2BE47A494F418D584B0C /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/debug.h */,
+                            F8D826CD79AA49BA9DB7FF02 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/gls.h */,
+                            5A28D05541024E0B97CE2EBC /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/image.cpp */,
+                            A0F7DE79245846B1B8BEE0C0 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/image.h */,
+                            0D608A15F3C14A609AADB0CB /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/json.cpp */,
+                            5EE498AB8FA5491F83B78F19 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/json.h */,
+                            B7C4AC1D924648F4BB6AFAE0 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/picojson.h */,
+                            2AF516F57D6C4DA782DE17D6 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/scene.cpp */,
+                            36AC6AF669594A8E9FB366F1 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/scene.h */,
+                            444CAEF6D2BC4AFDA37BF9A4 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/vmath.h */,
+                     );
+                     name = common;
+                     sourceTree = "<group>";
+              };
+              57D424128A6A45CCA052A291 /* ext */ = {
+                     isa = PBXGroup;
+                     children = (
+                            8A6F2FF6DA2D4DBBBB77FC23 /* lodepng */,
+                     );
+                     name = ext;
+                     sourceTree = "<group>";
+              };
+              8A6F2FF6DA2D4DBBBB77FC23 /* lodepng */ = {
+                     isa = PBXGroup;
+                     children = (
+                            2D75B51C04674455857AB7D6 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng/lodepng.cpp */,
+                            E819FA407F9941DCA4FB9332 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng/lodepng.h */,
+                     );
+                     name = lodepng;
+                     sourceTree = "<group>";
+              };
+              C7897682A2D14499AF3DA288 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            EB75EA2B395C44EFB87AAD86 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew/glew.c */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              5199B0FE156E4709941D96F5 /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            FBD8F7E24D6F4861BA2D6ECA /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew/glew.h */,
+                            C7350734BA6B4315BBBC2A8F /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew/glxew.h */,
+                            7391A7BE182E456C9263F846 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew/wglew.h */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              7EB71B87D9C240B28258DECD /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            D42DF6ECD3D248AAAED0FFE5 /* glfw */,
+                            BA376B437CC6482E9AC82EE2 /* 02_model */,
+                            0F87063C21FB4790A88C3A64 /* common */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              59417C847CCB466EB9D0A32D /* glfw */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 33BE383A03B647C6BE6D620B /* Build configuration list for PBXNativeTarget "glfw" */;
+                     buildPhases = (
+                            E612154632E944E7A5A42BA6 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                     );
+                     name = glfw;
+                     productName = glfw;
+                     productReference = D42DF6ECD3D248AAAED0FFE5 /* glfw */;
+                     productType = "com.apple.product-type.library.static";
+              };
+              C2CAA66586EC4D949DE4B9B1 /* 02_model */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = CF7FAB89A5E14372AC0DAC4D /* Build configuration list for PBXNativeTarget "02_model" */;
+                     buildPhases = (
+                            9319604DB374433E9D8BC97E /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            F9708A0041C54B40B540F6DB /* PBXTargetDependency */,
+                            42C2F0BCC3C348D2B345D3DB /* PBXTargetDependency */,
+                     );
+                     name = 02_model;
+                     productName = 02_model;
+                     productReference = BA376B437CC6482E9AC82EE2 /* 02_model */;
+                     productType = "com.apple.product-type.tool";
+              };
+              94FE87AA1E6D4AA39A33C066 /* common */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = EC53C4313E33422FAB4F49F2 /* Build configuration list for PBXNativeTarget "common" */;
+                     buildPhases = (
+                            83F50406F7C74AFFB2D8023F /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                     );
+                     name = common;
+                     productName = common;
+                     productReference = 0F87063C21FB4790A88C3A64 /* common */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              025AAE6D3FB44FAEBD34A750 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = BBD31DDC22854C17AE70F019 /* Build configuration list for PBXProject  "02_model" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            8C962CBB6ECD49E4B49388A2 /* Debug */,
+                            45C0202305134AF2BD72AE24 /* Release */,
+                            91A6DF7E060A40C284BE8CB6 /* MinSizeRel */,
+                            1900B0AA63FF4A0E81249827 /* RelWithDebInfo */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 4319E6B2917046A8A320E9E1;
+                     projectDirPath = "..";
+                     projectRoot = "";
+                     targets = (
+                            2355E2548FBF49CEB75F76FE /* ALL_BUILD */,
+                            30BCCF388085478BB2F0D5B0 /* ZERO_CHECK */,
+                            59417C847CCB466EB9D0A32D /* glfw */,
+                            C2CAA66586EC4D949DE4B9B1 /* 02_model */,
+                            94FE87AA1E6D4AA39A33C066 /* common */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              4B9D0F1902D44DC3B518CE60 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              C3FCBF8353E24CE6AE5A84C3 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode -f /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              FD54EE8B24FA408984436694 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              19088501C9954F28945CCEF2 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode -f /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              E612154632E944E7A5A42BA6 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            4BA8FE80C161473B8204536F /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/clipboard.c */,
+                            B0C5D30D61794B84BD92A4F7 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_clipboard.m */,
+                            B93D9F6B22D24FF8A79A6E71 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_gamma.c */,
+                            0F2C443193E74E829F8DA069 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_init.m */,
+                            11656A064815470AA0BF08E4 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_joystick.m */,
+                            91812F19D6AF4CF0AF9C8BE0 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_monitor.m */,
+                            7BA4E15F66374232BD50DF17 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_time.c */,
+                            C3BFCB4853904D83B4D28603 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/cocoa_window.m */,
+                            6BB2FAC260D44073BCF29D45 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/context.c */,
+                            25BA8935A37F411DB521E90D /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/gamma.c */,
+                            C5DB565D8124431E9B60F255 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/init.c */,
+                            3CE0D98692FC48E6B93493F9 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/input.c */,
+                            D42F44D7235B43158EA001A1 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/joystick.c */,
+                            B5E7B6648E5C487D9C7580A8 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/monitor.c */,
+                            852017C1661141698C1DC321 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/nsgl_context.m */,
+                            A29B8C624D2448C0B77C1C42 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/time.c */,
+                            417054FB9DBB4A259492E30F /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src/window.c */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+              9319604DB374433E9D8BC97E /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            40FA705505B84CA2857400C3 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps/02_model.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+              83F50406F7C74AFFB2D8023F /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            9BB69F5C06D347FAAD1CE565 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew/glew.c */,
+                            3ADE6BCEF4684A709DAB2E39 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng/lodepng.cpp */,
+                            242A734DC4FB4F219C22790D /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/image.cpp */,
+                            E46E6801346242628CFA0D47 /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/json.cpp */,
+                            B9D0E307D9454CD19403B4EE /* /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/scene.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              B0DB9D69106945ECBA3ADFE8 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = C2CAA66586EC4D949DE4B9B1 /* 02_model */;
+                     targetProxy = DA8A5D6CC85A4E0884DD75D7 /* PBXContainerItemProxy */;
+              };
+              B73C886A230D48B8A2FB462A /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 94FE87AA1E6D4AA39A33C066 /* common */;
+                     targetProxy = 9161DF95CE954374B49223FB /* PBXContainerItemProxy */;
+              };
+              4A0E9567D2144B39B5DE85B6 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 59417C847CCB466EB9D0A32D /* glfw */;
+                     targetProxy = 2C97C2A95FD54C419D10CAF7 /* PBXContainerItemProxy */;
+              };
+              937D641931364DB6BE538DA2 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 30BCCF388085478BB2F0D5B0 /* ZERO_CHECK */;
+                     targetProxy = 45B7EA63377A4F839F916EE9 /* PBXContainerItemProxy */;
+              };
+              F9708A0041C54B40B540F6DB /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 94FE87AA1E6D4AA39A33C066 /* common */;
+                     targetProxy = 773A7106692842DFA84CCA28 /* PBXContainerItemProxy */;
+              };
+              42C2F0BCC3C348D2B345D3DB /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 59417C847CCB466EB9D0A32D /* glfw */;
+                     targetProxy = E6D1163DE6EA4747A528493D /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              DAE6BC6046D34BBDBE05C435 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/build;
+                     };
+                     name = Debug;
+              };
+              262A7EEB9F8E4EF2A997152B /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/build;
+                     };
+                     name = Release;
+              };
+              2650C922163745FC844052CB /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/build;
+                     };
+                     name = MinSizeRel;
+              };
+              D64CE5EBB1824D75B2282BCD /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/build;
+                     };
+                     name = RelWithDebInfo;
+              };
+              8DAA7FCEED62454C9BE68589 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+                     };
+                     name = Debug;
+              };
+              E9E47F37C58B46368C321C5B /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+                     };
+                     name = Release;
+              };
+              8F218D45E7CC498592506A3C /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+                     };
+                     name = MinSizeRel;
+              };
+              D751A714476C4DBABFF618DA /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              70F87292C22C481D8FDF33F2 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+                     };
+                     name = Debug;
+              };
+              82B30028AAB44E3CB4C17370 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+                     };
+                     name = Release;
+              };
+              B68D67E8AF334762AF66BD76 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+                     };
+                     name = MinSizeRel;
+              };
+              C00CA4B15A7948B9A2533625 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              8ABCB54C36C04CF5ABA4A0C1 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/bin/xcode/Debug;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/common/ext/glfw/src, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "     -Wall";
+                            OTHER_LIBTOOLFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = glfw3;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/common/ext/glfw/src;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+                     };
+                     name = Debug;
+              };
+              5D431C4E05984432A1FFB59C /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/bin/xcode/Release;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/common/ext/glfw/src, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    -DNDEBUG   -Wall";
+                            OTHER_LIBTOOLFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = glfw3;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/common/ext/glfw/src;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+                     };
+                     name = Release;
+              };
+              FF4A0ACFBDC54489A12A8098 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/bin/xcode/MinSizeRel;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/common/ext/glfw/src, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    -DNDEBUG   -Wall";
+                            OTHER_LIBTOOLFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = glfw3;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/common/ext/glfw/src;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+                     };
+                     name = MinSizeRel;
+              };
+              D94C8FEE34454FB4BC70276B /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/bin/xcode/RelWithDebInfo;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/common/ext/glfw/src, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "       -DNDEBUG   -Wall";
+                            OTHER_LIBTOOLFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = glfw3;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/common/ext/glfw/src;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              56468A0227CC4284A86A3A99 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+                            CLANG_CXX_LIBRARY = "libc++";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/bin/xcode/Debug;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "    ";
+                            OTHER_CPLUSPLUSFLAGS = "    ";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/bin/xcode/Debug/libcommon.a /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/bin/xcode/Debug/libglfw3.a -framework OpenGL -framework AGL -framework AGL -framework OpenGL -framework Cocoa -framework OpenGL -framework AGL -framework OpenGL -framework AGL -framework IOKit -framework CoreFoundation";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = 02_model;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/apps;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+                     };
+                     name = Debug;
+              };
+              AEFF53119FE64C7FB7C6E6F3 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+                            CLANG_CXX_LIBRARY = "libc++";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/bin/xcode/Release;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "    -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/bin/xcode/Release/libcommon.a /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/bin/xcode/Release/libglfw3.a -framework OpenGL -framework AGL -framework AGL -framework OpenGL -framework Cocoa -framework OpenGL -framework AGL -framework OpenGL -framework AGL -framework IOKit -framework CoreFoundation";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = 02_model;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/apps;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+                     };
+                     name = Release;
+              };
+              C92E9D81AA9243268BA513D0 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+                            CLANG_CXX_LIBRARY = "libc++";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/bin/xcode/MinSizeRel;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "    -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/bin/xcode/MinSizeRel/libcommon.a /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/bin/xcode/MinSizeRel/libglfw3.a -framework OpenGL -framework AGL -framework AGL -framework OpenGL -framework Cocoa -framework OpenGL -framework AGL -framework OpenGL -framework AGL -framework IOKit -framework CoreFoundation";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = 02_model;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/apps;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+                     };
+                     name = MinSizeRel;
+              };
+              65E16E46DECF46A29FC0E7C1 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+                            CLANG_CXX_LIBRARY = "libc++";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/bin/xcode/RelWithDebInfo;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "       -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/bin/xcode/RelWithDebInfo/libcommon.a /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/bin/xcode/RelWithDebInfo/libglfw3.a -framework OpenGL -framework AGL -framework AGL -framework OpenGL -framework Cocoa -framework OpenGL -framework AGL -framework OpenGL -framework AGL -framework IOKit -framework CoreFoundation";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = 02_model;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/apps;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              C7C3BCF29D20413784737446 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+                            CLANG_CXX_LIBRARY = "libc++";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/bin/xcode/Debug;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    ";
+                            OTHER_CPLUSPLUSFLAGS = "    ";
+                            OTHER_LIBTOOLFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = common;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/common;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+                     };
+                     name = Debug;
+              };
+              33464713CD9E48DCA0CD5155 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+                            CLANG_CXX_LIBRARY = "libc++";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/bin/xcode/Release;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+                            OTHER_LIBTOOLFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = common;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/common;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+                     };
+                     name = Release;
+              };
+              BF9CEBEB659E44A9B83F2593 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+                            CLANG_CXX_LIBRARY = "libc++";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/bin/xcode/MinSizeRel;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+                            OTHER_LIBTOOLFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = common;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/common;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+                     };
+                     name = MinSizeRel;
+              };
+              85A498FB09A547F7953C68DE /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+                            CLANG_CXX_LIBRARY = "libc++";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/bin/xcode/RelWithDebInfo;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/apps, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glew, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/glfw/include, /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/src/common/ext/lodepng, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "       -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+                            OTHER_LIBTOOLFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = common;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/common;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              BBD31DDC22854C17AE70F019 /* Build configuration list for PBXProject  "02_model" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            DAE6BC6046D34BBDBE05C435 /* Debug */,
+                            262A7EEB9F8E4EF2A997152B /* Release */,
+                            2650C922163745FC844052CB /* MinSizeRel */,
+                            D64CE5EBB1824D75B2282BCD /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              D81A7B2156894FA1BDF1E31B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            8DAA7FCEED62454C9BE68589 /* Debug */,
+                            E9E47F37C58B46368C321C5B /* Release */,
+                            8F218D45E7CC498592506A3C /* MinSizeRel */,
+                            D751A714476C4DBABFF618DA /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              1505AED2ACFB4066897A9711 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            70F87292C22C481D8FDF33F2 /* Debug */,
+                            82B30028AAB44E3CB4C17370 /* Release */,
+                            B68D67E8AF334762AF66BD76 /* MinSizeRel */,
+                            C00CA4B15A7948B9A2533625 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              33BE383A03B647C6BE6D620B /* Build configuration list for PBXNativeTarget "glfw" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            8ABCB54C36C04CF5ABA4A0C1 /* Debug */,
+                            5D431C4E05984432A1FFB59C /* Release */,
+                            FF4A0ACFBDC54489A12A8098 /* MinSizeRel */,
+                            D94C8FEE34454FB4BC70276B /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              CF7FAB89A5E14372AC0DAC4D /* Build configuration list for PBXNativeTarget "02_model" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            56468A0227CC4284A86A3A99 /* Debug */,
+                            AEFF53119FE64C7FB7C6E6F3 /* Release */,
+                            C92E9D81AA9243268BA513D0 /* MinSizeRel */,
+                            65E16E46DECF46A29FC0E7C1 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              EC53C4313E33422FAB4F49F2 /* Build configuration list for PBXNativeTarget "common" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            C7C3BCF29D20413784737446 /* Debug */,
+                            33464713CD9E48DCA0CD5155 /* Release */,
+                            BF9CEBEB659E44A9B83F2593 /* MinSizeRel */,
+                            85A498FB09A547F7953C68DE /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 025AAE6D3FB44FAEBD34A750;
+}

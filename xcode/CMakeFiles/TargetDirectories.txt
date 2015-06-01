@@ -1,0 +1,5 @@
+/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/apps/CMakeFiles/02_model.dir
+/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/common/ext/glfw/CMakeFiles/ALL_BUILD.dir
+/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/common/CMakeFiles/common.dir
+/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/common/ext/glfw/CMakeFiles/ZERO_CHECK.dir
+/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/xcode/src/common/ext/glfw/src/CMakeFiles/glfw.dir
