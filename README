@@ -1,0 +1,21 @@
+CS 77 Lab2 Modeling
+
+Name
+
+	Modeling
+
+Testing
+
+	I used Xcode to directly compile all the images. 
+
+	For the regulate portion of the assignment, I used the different provided json files. In Product->Scheme->Edit Scheme->Run, I added all the json to the arguments and used Xcode to produce the png files after selecting the according argument. The png is created after pressing 's' in the scenes folder.
+
+	For the extra credit portion, I created two new json files, named '06_spline_adaptive.json' and '06_subdivquad_displaced.json'. '06_spline_adaptive.json' represents the De Casteljau and the Adaptive Subdivision of the extra credit portions. I added both to the arguments in Product->Scheme->Edit Scheme->Run. I pressed Run after selecting the according argument. The png is created after pressing 's' in the scenes folder.
+
+Explanation 
+	
+	In Adaptive Subdivision, 1.03 is used to deteminate whether the curve is flat enough. It is chosen after doing some research and experiments. 
+
+
+Kiko Lam
+5/4/2015

@@ -1,0 +1,18 @@
+{
+    "lookat_camera": { "from": [0,0,20], "width": 0.4, "height": 0.4 },
+    "background": [0,0,0],
+    "meshes": [
+        {
+            "frame": { "o": [1,-3,0] },
+            "pos": [ -2,0,0.5, 2,-0.6,1, 2,0.6,1, 0,1,0 ],
+            "norm": [ 0,1,0, 0,1,0, 0,1,0, 0,1,0],
+            "spline": [0,1,2,3],
+            "material": { "kd": [1,1,1], "ks": [0,0,0] },
+            "subdivision_bezier_level": 6,
+            "subdivision_bezier_uniform": false
+        }
+    ],
+    "lights": [
+        { "frame": { "o": [0,5,5] }, "intensity": [10,10,10] }
+    ]
+}

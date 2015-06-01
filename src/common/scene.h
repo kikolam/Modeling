@@ -59,6 +59,7 @@ struct Surface {
     frame3f     frame = identity_frame3f;   // frame
     float       radius = 1;                 // radius
     bool        isquad = false;             // whether it's a quad
+    float        displacement_depth = 0;
     Material*   mat = new Material();       // material
 
     

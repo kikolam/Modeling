@@ -43,7 +43,8 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
-      useCustomWorkingDirectory = "NO"
+      useCustomWorkingDirectory = "YES"
+      customWorkingDirectory = "/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/scenes"
       buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
@@ -60,8 +61,32 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/scenes/02_subdivspheres.json"
+            argument = "/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/scenes/01_spline.json"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/scenes/04_subdivcube.json"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/scenes/05_subdivmonkey.json"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/scenes/03_subdivquads.json"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/scenes/06_subdivquad_displaced.json"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/scenes/06_spline_adaptive.json"
             isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/scenes/02_subdivspheres.json"
+            isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
       <AdditionalOptions>

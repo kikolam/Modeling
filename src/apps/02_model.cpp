@@ -99,12 +99,32 @@ void smooth_normals(Mesh* mesh) {
     //put_your_code_here("Implement normal smoothing");
     
     // foreach triangle
+    for(auto f : mesh->triangle) {
+        
+        // compute face normal
+        auto fn = normalize(cross(mesh->pos[f.y]-mesh->pos[f.x], mesh->pos[f.z]-mesh->pos[f.x]));
+        
+        // accumulate face normal to the vertex normals of each face index
+        for (auto i : range(3)) mesh->norm[f[i]] += fn;
+    }
+
         // compute face normal
         // accumulate face normal to the vertex normals of each face index
+    
     // foreach quad
+    for(auto f : mesh->quad) {
+
         // compute face normal
+        auto fn = normalize(normalize(cross(mesh->pos[f.y]-mesh->pos[f.x], mesh->pos[f.z]-mesh->pos[f.x])) +
+                            normalize(cross(mesh->pos[f.z]-mesh->pos[f.x], mesh->pos[f.w]-mesh->pos[f.x])));
+    
         // accumulate face normal to the vertex normals of each face index
+        for (auto i : range(4)) mesh->norm[f[i]] += fn;
+    }
+
     // normalize all vertex normals
+    for (auto& n : mesh->norm) n = normalize(n);
+
 }
 
 // smooth out tangents
@@ -140,20 +160,28 @@ void subdivide_bezier_uniform(Mesh *bezier) {
         
         for (int i=0 ; i <= steps; i++) {
             
+            // get control points of segment
+            // note the starting index of new points
             auto p0 = bezier->pos[segment.x];
             auto p1 = bezier->pos[segment.y];
             auto p2 = bezier->pos[segment.z];
             auto p3 = bezier->pos[segment.w];
-            
+
+            // compute t for current segment
+
+            // compute new point position
             float t = float(i)/steps;
             
+            // compute blending weights
             float b0 = bernstein(t, 0, 3);
             float b1 = bernstein(t, 1, 3);
             float b2 = bernstein(t, 2, 3);
             float b3 = bernstein(t, 3, 3);
             
+            // add new point to pos vector
             auto pt= b0*p0 + b1*p1 + b2*p2 + b3*p3;
             
+            // create line segment with the new points
             pos.push_back(pt);
             
             vec2i newline = vec2i(index, index+1);
@@ -163,24 +191,11 @@ void subdivide_bezier_uniform(Mesh *bezier) {
             }
             //line.push_back(newline);
             
-            /*if (index > 0 ){
-                vec2i newline = vec2i(index-1, index);
-                line.push_back(newline);
-            }*/
-            
             index++;
         }
 
     }
-        // get control points of segment
-        // note the starting index of new points
-        // foreach step
-            // compute t for current segment
-            // compute blending weights
-            // compute new point position
-            // add new point to pos vector
-        // foreach step
-            // create line segment
+
     
     // copy vertex positions
     bezier->pos = pos;
@@ -195,6 +210,23 @@ void subdivide_bezier_uniform(Mesh *bezier) {
     smooth_tangents(bezier);
 }
 
+bool flatenough(vec4i &spline, vector<vec3f> &pos) {
+    //printf("hi");
+    float gradient_1 = length(pos[spline.y] - pos[spline.x]);
+    float gradient_2 = length(pos[spline.z] - pos[spline.y]);
+    float gradient_3 = length(pos[spline.w] - pos[spline.z]);
+    
+    float gradient_4 = length(pos[spline.x] - pos[spline.w]);
+    float gradient_5 = (gradient_1 + gradient_2 + gradient_3)/gradient_4;
+    
+    //printf("%f", gradient_5);
+    
+    return (gradient_5 < 1.03);
+    
+    //return (abs(gradient_2-gradient_1) + abs(gradient_3-gradient_2)) / 2) < 0.1 * one3f;
+    
+}
+
 // subdivide bezier spline into line segments (assume bezier has only bezier segments and no lines)
 // subdivide using de casteljau algorithm
 void subdivide_bezier_decasteljau(Mesh *bezier) {
@@ -205,16 +237,68 @@ void subdivide_bezier_decasteljau(Mesh *bezier) {
     
     // *note*: this psuedocode is for an iterative implementation of the algorithm without adaptive subd
     // foreach level
+    bool done = false;
+    
+    while (!done) {
+    
+    //for (int i = 0; i < bezier->subdivision_bezier_level; i++){
+        vector<vec4i> new_splines = vector<vec4i>();
+        
         // make new arrays of positions and bezier segments
         // copy all the vertices into the new array (this waste space but it is easier for now)
         // foreach bezier segment
-            // apply subdivision algorithm
-            // prepare indices for two new segments
-            // add mid point
-            // add points for first segment and fix segment indices
-            // add points for second segment and fix segment indices
-            // add indices for both segments into new segments array
+        // apply subdivision algorithm
+        // prepare indices for two new segments
+        // add mid point
+        // add points for first segment and fix segment indices
+        // add points for second segment and fix segment indices
+        // add indices for both segments into new segments array
         // set new arrays pos, segments into the working lineset
+        
+        done = true;
+        
+        for (int j = 0; j < splines.size(); j++){
+        
+            vec4i &spline = splines[j];
+            
+            if (!flatenough(spline, pos)){
+                done = false;
+            int p0 = spline.x;
+            int p1 = spline.y;
+            int p2 = spline.z;
+            int p3 = spline.w;
+            
+            vec3f Q0 = (pos[p0] + pos[p1]) /2;
+            vec3f Q1 = (pos[p1] + pos[p2]) /2;
+            vec3f Q2 = (pos[p2] + pos[p3]) /2;
+            vec3f R0 = (Q0 + Q1) /2;
+            vec3f R1 = (Q1 + Q2) /2;
+            vec3f S = (R0 + R1) /2;
+            
+            int q0 = pos.size();
+            pos.push_back(Q0);
+            int q2 = pos.size();
+            pos.push_back(Q2);
+            
+            int r0 = pos.size();
+            pos.push_back(R0);
+            int r1 = pos.size();
+            pos.push_back(R1);
+            
+            int s = pos.size();
+            pos.push_back(S);
+            
+            new_splines.push_back(vec4i(p0, q0, r0, s));
+            new_splines.push_back(vec4i(s, r1, q2, p3));
+            
+        }
+            else new_splines.push_back(spline);
+        }
+        
+        splines = new_splines;
+        
+    }
+
     
     // copy vertex positions
     bezier->pos = pos;
@@ -231,12 +315,17 @@ void subdivide_bezier_decasteljau(Mesh *bezier) {
     smooth_tangents(bezier);
 }
 
+//void subdivide_bezier_adaptive_decasteljau(Mesh *bezier) {
+    
+//}
+
 // subdivide bezier spline into line segments (assume bezier has only bezier segments and no lines)
 void subdivide_bezier(Mesh* bezier) {
     // skip is needed
     if(not bezier->subdivision_bezier_level) return;
     
     if(bezier->subdivision_bezier_uniform) subdivide_bezier_uniform(bezier);
+    //else if (bezier->subdivision_bezier_adaptive) subdivide_bezier_adaptive_decasteljau(bezier);
     else subdivide_bezier_decasteljau(bezier);
 }
 
@@ -260,25 +349,121 @@ void subdivide_catmullclark(Mesh* subdiv) {
         // create edge_map from current mesh
         auto edge_map = EdgeMap(mesh->triangle,mesh->quad);
 
-        //put_your_code_here("Implement Catmull-Clark Subdivision");
+        //vector<vector<int> > map(pos.size(), vector<int>(pos.size(),0));
         
         // linear subdivision - create vertices --------------------------------------
+        
+        //pos = mesh->pos;
+ 
         // copy all vertices from the current mesh
+        
+        //int v_offset = mesh->pos.size();
+        for (auto vertex : mesh->pos) {
+            
+            pos.push_back(vertex);
+            
+        }
+        
         // add vertices in the middle of each edge (use EdgeMap)
         // add vertices in the middle of each triangle
         // add vertices in the middle of each quad
+        
+        int e_offset = pos.size();
+        for (auto edge : edge_map.edges()) {
+            
+            auto vertex = (mesh->pos[edge.x] + mesh->pos[edge.y])/2.0;
+            pos.push_back(vertex);
+            
+        }
+        
+        int t_offset = pos.size();
+        for (auto triangle : mesh->triangle) {
+            
+            auto vertex = (mesh->pos[triangle.x] + mesh->pos[triangle.y] + mesh->pos[triangle.z])/3.0;
+            pos.push_back(vertex);
+            
+        }
+        
+        int q_offset = pos.size();
+        for (auto quad : mesh->quad) {
+            
+            auto vertex = (mesh->pos[quad.x] + mesh->pos[quad.y] + mesh->pos[quad.z] + mesh->pos[quad.w])/4.0;
+            pos.push_back(vertex);
+            
+            
+        }
         
         // subdivision pass ----------------------------------------------------------
         // compute an offset for the edge vertices
         // compute an offset for the triangle vertices
         // compute an offset for the quad vertices
+        
         // foreach triangle
-            // add three quads to the new quad array
+        // add three quads to the new quad array
+
+        for (int i = 0; i < mesh->triangle.size(); i++) {
+            
+            int A = mesh->triangle[i].x;
+            int B = mesh->triangle[i].y;
+            int C = mesh->triangle[i].z;
+            int D = t_offset+i;
+            int AB = e_offset + edge_map.edge_index(vec2i(A,B));
+            int BC = e_offset + edge_map.edge_index(vec2i(B,C));
+            int CA = e_offset + edge_map.edge_index(vec2i(C,A));
+            
+            quad.push_back(vec4i(A, AB, D, CA));
+            quad.push_back(vec4i(AB, B, BC, D));
+            quad.push_back(vec4i(BC, C, CA, D));
+            
+        }
+        
         // foreach quad
-            // add four quads to the new quad array
+        // add four quads to the new quad array
+        
+        for (int i = 0; i < mesh->quad.size(); i++) {
+            
+            int A = mesh->quad[i].x;
+            int B = mesh->quad[i].y;
+            int C = mesh->quad[i].z;
+            int D = mesh->quad[i].w;
+            int E = q_offset+i;
+            int AB = e_offset + edge_map.edge_index(vec2i(A,B));
+            int BC = e_offset + edge_map.edge_index(vec2i(B,C));
+            int CD = e_offset + edge_map.edge_index(vec2i(C,D));
+            int DA = e_offset + edge_map.edge_index(vec2i(D,A));
+            
+            quad.push_back(vec4i(A, AB, E, DA));
+            quad.push_back(vec4i(AB, B, BC, E));
+            quad.push_back(vec4i(E, BC, C, CD));
+            quad.push_back(vec4i(DA, E, CD, D));
+            
+        }
         
         // averaging pass ------------------------------------------------------------
         // create arrays to compute pos averages (avg_pos, avg_count)
+        
+        vector<vec3f> average_pos = vector<vec3f>(pos.size(), zero3f);
+        vector<int> count = vector<int>(pos.size(), 0);
+        
+        for (int i = 0; i < quad.size(); i++) {
+            vec4i q = quad[i];
+            vec3f centroid = (pos[q.x] + pos[q.y] + pos[q.z] + pos[q.w])/4;
+            
+            average_pos[q.x] += centroid;
+            count[q.x] ++;
+            average_pos[q.y] += centroid;
+            count[q.y] ++;
+            average_pos[q.z] += centroid;
+            count[q.z] ++;
+            average_pos[q.w] += centroid;
+            count[q.w] ++;
+            
+        }
+        
+        for (int i = 0; i < average_pos.size(); i++) {
+            average_pos[i] /= count[i];
+        }
+        
         // arrays have the same length as the new pos array, and are init to zero
         // for each new quad
             // compute quad center using the new pos array
@@ -288,6 +473,9 @@ void subdivide_catmullclark(Mesh* subdiv) {
         
         // correction pass -----------------------------------------------------------
         // foreach pos, compute correction p = p + (avg_p - p) * (4/avg_count)
+        for (int i = 0; i < pos.size(); i++) {
+            pos[i] += (average_pos[i] - pos[i]) * ((float)4/count[i]);
+        }
         
         // set new arrays pos, quad back into the working mesh; clear triangle array
         mesh->pos = pos;
@@ -334,6 +522,14 @@ void subdivide_surface(Surface* surface) {
         auto p10 = vec3f( 1,-1,0) * radius;
         auto p11 = vec3f( 1, 1,0) * radius;
         
+        image3f image;
+        
+        if (surface->displacement_depth !=0){
+            
+            image = read_png("/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/scenes/displacement_map.png", false);
+
+        }
+        
         // foreach column
         for(auto i : range(ci+1)) {
             // foreach row
@@ -344,6 +540,16 @@ void subdivide_surface(Surface* surface) {
                 
                 // compute new point location
                 auto p = p00*u*v + p01*u*(1-v) + p10*(1-u)*v + p11*(1-u)*(1-v);
+                
+                if (surface->displacement_depth !=0){
+                
+                    //image3f image = read_png("/Users/kikolam/Documents/Dartmouth/15S/CS77/assignment02/scenes/displacement_map.png", false);
+                    
+                    vec3f new_color = image.at(i*image.width()/ci -1, j*image.height()/cj -1);
+                    //printf("%f", new_color.x);
+                    p += vec3f(0.0, 0.0, new_color.x);
+                }
+
                 
                 // insert point into pos vector, remembering its index
                 vertexidx[make_pair(i,j)] = mesh->pos.size();
@@ -368,78 +574,82 @@ void subdivide_surface(Surface* surface) {
         }
         
     } else {
-        //put_your_code_here("Implement sphere subdivision");
         
         // compute how much to subdivide
-        auto ci = 1 << (surface->subdivision_level+2);
-        auto cj = 1 << (surface->subdivision_level+1);
+        auto ci = 1 << (surface->subdivision_level+1);
+        auto cj = 1 << (surface->subdivision_level+2);
         
         // foreach column
         //for (int c = 0; c <= ci; c++) {
+        vec3f top = surface->radius * z3f;
+        vec3f bottom = -surface->radius * z3f;
+        
+        mesh->pos.push_back(top);
+        mesh->pos.push_back(bottom);
+        
+        // foreach row
+        // compute phi,theta for column and row
+        // compute new point location
+        // insert point into pos vector, remembering its index
+        
+        
         for(auto c : range(ci+1)) {
             
             //for (int r = 0; c <= cj; r++) {
             for(auto r : range(cj+1)) {
-                
-                float phi = (float(c)/float(ci))*2.0*pi;
-                float theta = (float(r)/float(cj))*pi;
+
+                float phi = (float(r)/float(cj))*2.0*pi;
+                float theta = (float(c)/float(ci))*pi;
                 
                 vec3f pu = vec3f(radius*cosf(phi)*sinf(theta), radius*sinf(phi)*sinf(theta), radius*cosf(theta));
                 
                 vertexidx[make_pair(c,r)] = mesh->pos.size();
                 mesh->pos.push_back(pu);
-                mesh->norm.push_back(z3f);
+                mesh->norm.push_back( normalize(pu - surface->frame.o) );
                 
             }
         }
         
-            // foreach column
-            for(auto i : range(ci)) {
+        // foreach row
+        // compute phi,theta for column and row
+        // compute new point location
+        // insert point into pos vector, remembering its index
+        
+        for (int i =0; i < ci; i++){
                 // foreach row
-                for(auto j : range(cj)) {
+                //for(auto j : range(cj)) {
+            for (int j =0; j < cj; j++){
                     // find indices of neigboring vertices
                     int idx0 = vertexidx[make_pair(i+0,j+0)];
                     int idx1 = vertexidx[make_pair(i+1,j+0)];
-                    int idx2 = vertexidx[make_pair(i+1,j+1)];
-                    int idx3 = vertexidx[make_pair(i+0,j+1)];
+                    int idx2 = vertexidx[make_pair(i+1,(j+1)%cj)];
+                    int idx3 = vertexidx[make_pair(i+0,(j+1)%cj)];
                     
-                    // create quad
-                    if ( j == 0 || j == cj+1) {
-                    //if ( j == 0 || j == cj-1) {
-                        
+                    //mesh->quad.push_back({idx0, idx1, idx2, idx3});
+                
+                    
+                    if ( i == 0  ) {
+                        int idx0 = 0;
                         mesh->triangle.push_back({idx0, idx1, idx2});
-
+                        
                     }
                     
-                    else if (j == cj-1){
-                    //else if (i == ci-1){
+                    //for bottom triangle
+                    else if (i == ci-1){
                         
-                        int idx_0 = vertexidx[make_pair(i,0)];
-                        int idx_1 = vertexidx[make_pair(i+1,0)];
-                        int idx_2 = vertexidx[make_pair(i+1,0)];
-                        int idx_3 = vertexidx[make_pair(i,0)];
                         
-                        mesh->quad.push_back({idx_0, idx_1, idx_2, idx_3});
-                        
+                        mesh->triangle.push_back({idx0, idx1, idx3});
                     }
+
                     else {
                         
                         mesh->quad.push_back({idx0, idx1, idx2, idx3});
 
                     }
-                }
-            //}
+            }
             
         }
-            // foreach row
-                // compute phi,theta for column and row
-                // compute new point location
-                // insert point into pos vector, remembering its index
-        
-        // foreach column
-            // foreach row
-                // find indices of neighboring vertices
-                // create triangle (face touching pole) or quad
+
     }
     
     // according to smooth, either smooth_normals or facet_normals

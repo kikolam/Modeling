@@ -1,0 +1,16 @@
+{
+    "lookat_camera": { "from": [3,8,3] },
+    "surfaces": [
+        {
+            "frame": { "o": [-4,0,-1], "y": [0,0,-1], "z": [0,1,0] },
+            "radius": 2.9,
+            "isquad": true,
+            "displacement_depth": 1,
+            "subdivision_level": 5,
+            "subdivision_smooth": true,
+            "material": { "kd": [0.7,0.7,0.7], "ks": [0.7,0.7,0.7], "n": 100 }
+        }
+    ],
+    "lights": [
+        { "frame": { "o": [0,5,0] }, "intensity": [20,20,20] }
+    ]}
